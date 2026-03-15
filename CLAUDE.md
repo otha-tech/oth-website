@@ -9,7 +9,7 @@ Old Town Hall Associates commercial real estate brochure site.
 
 ## Repos
 - **Site (GitHub Pages):** `git@github.com:otha-tech/oth-website.git` (was bjpasquale/oth-website, redirected)
-- **Parent archive:** `https://github.com/otha-tech/otha-website.git` — PDFs, photos, docs (not deployed)
+- **Parent archive:** `https://github.com/otha-tech/otha-website-assets-only.git` — PDFs, photos, docs (not deployed)
 
 ## Local Paths
 - MacBook: `/Users/benpasquale/Projects/OTH website/site/` (site repo)
