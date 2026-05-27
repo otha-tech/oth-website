@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.othde.com/sitemap.xml
+Sitemap: https://othde.com/sitemap.xml

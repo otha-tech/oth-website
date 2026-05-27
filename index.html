@@ -523,6 +523,41 @@
             border-color: var(--accent);
         }
 
+        .property-badge {
+            display: inline-block;
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 0.25rem 0.6rem;
+            border-radius: 2px;
+            margin-bottom: 0.75rem;
+        }
+
+        .badge-available { background: var(--accent-light); color: #1f5d52; }
+        .badge-leased { background: var(--gray-200); color: var(--gray-600); }
+
+        .properties-cta {
+            max-width: 1400px;
+            margin: 3.5rem auto 0;
+            text-align: center;
+        }
+
+        .btn-viewall {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--accent);
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            transition: background 0.3s;
+        }
+
+        .btn-viewall:hover { background: #1f5d52; }
+
         /* Affiliates Section */
         .affiliates {
             padding: 8rem 4rem;
@@ -902,10 +937,12 @@
                 </div>
                 <div class="property-content">
                     <p class="property-location">New Castle, DE</p>
+                    <span class="property-badge badge-available">Available</span>
                     <h3>92 Reads Way</h3>
                     <p class="property-details">Office space in a campus setting with refreshed atrium and common areas. Up to 21,200 SF available. Free parking, natural light, adjacent to Wilmington Airport.</p>
                     <p class="property-broker">Represented by <strong>Cindy Fleming</strong>, JLL</p>
                     <div class="property-links">
+                        <a href="/properties/92-reads-way/" class="property-link">Details</a>
                         <a href="https://www.loopnet.com/Listing/92-Reads-Way-New-Castle-DE/34569280/" target="_blank" rel="noopener noreferrer" class="property-link">LoopNet</a>
                         <a href="assets/92 reads way.pdf" target="_blank" rel="noopener noreferrer" class="property-link">Brochure</a>
                     </div>
@@ -918,10 +955,12 @@
                 </div>
                 <div class="property-content">
                     <p class="property-location">Newark, DE</p>
+                    <span class="property-badge badge-available">Available</span>
                     <h3>100 Commerce Drive</h3>
                     <p class="property-details">Class A 3-story office at Christiana Corporate Center. 11,086 SF available. Glass rooftop mezzanine, 9' ceilings, 300 parking spaces. Visible from I-95.</p>
                     <p class="property-broker">Represented by <strong>John Kaczowka</strong>, CBRE</p>
                     <div class="property-links">
+                        <a href="/properties/100-commerce-drive/" class="property-link">Details</a>
                         <a href="https://www.loopnet.com/Listing/100-Commerce-Dr-Newark-DE/3953005/" target="_blank" rel="noopener noreferrer" class="property-link">LoopNet</a>
                         <a href="assets/100 commerce.pdf" target="_blank" rel="noopener noreferrer" class="property-link">Brochure</a>
                     </div>
@@ -934,14 +973,19 @@
                 </div>
                 <div class="property-content">
                     <p class="property-location">Newark, DE</p>
+                    <span class="property-badge badge-leased">Fully Leased</span>
                     <h3>Sabre Building</h3>
                     <p class="property-details">Professional office building at 4051 Ogletown-Stanton Road. Convenient Newark location with excellent visibility and easy highway access.</p>
                     <p class="property-broker">Represented by <strong>Cindy Fleming</strong>, JLL</p>
                     <div class="property-links">
+                        <a href="/properties/sabre-building/" class="property-link">Details</a>
                         <a href="https://www.loopnet.com/Listing/4051-Ogletown-Stanton-Rd-Newark-DE/34775635/" target="_blank" rel="noopener noreferrer" class="property-link">LoopNet</a>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="properties-cta">
+            <a href="/properties/" class="btn-viewall">View all properties</a>
         </div>
     </section>
 
