@@ -44,6 +44,22 @@ Old Town Hall Associates commercial real estate brochure site.
 - Google verification file: `google908cbf10d136107d.html`
 - Domain verified in Google Search Console
 
+## DNS / Cloudflare — CRITICAL, DO NOT PROXY
+othde.com DNS is on Cloudflare, but the GitHub Pages records **MUST stay "DNS only" (grey
+cloud), never Proxied (orange)**. The 5 records: four apex `A` records (185.199.108–111.153)
+and the `www` CNAME (→ `bjpasquale.github.io`, resolves fine).
+
+**Why:** GitHub Pages auto-renews its Let's Encrypt cert every ~90 days. If the records are
+proxied, Cloudflare intercepts the ACME renewal challenge → renewal silently fails →
+~90 days later the whole site returns **Cloudflare 526 "Invalid SSL certificate"** (apex
+*and* www). This took the site down on 2026-05-27. Fix was: grey-cloud the 5 records, then
+GitHub re-issues the cert (DNS check must read "successful"; provisioning takes up to ~15
+min and resets if you click Save/Remove during it — leave it alone once triggered).
+
+If you ever want Cloudflare's proxy benefits (caching/WAF), the only clean path is to move
+hosting to **Cloudflare Pages** (like tinyweekends.co) — proxying GitHub Pages will always
+break SSL renewal. `gis-proxy.othde.com` may stay Proxied (separate tunnel) — don't touch it.
+
 ## Deploy
 Changes pushed to `main` auto-deploy via GitHub Pages. Run `node build.mjs` first if you
 edited `buildings.json` or `build.mjs`, so generated pages + sitemap are current.
