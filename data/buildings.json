@@ -209,29 +209,6 @@
       "geo": { "lat": null, "lng": null }
     },
     {
-      "name": "Lincoln Street",
-      "slug": "lincoln-street",
-      "address": "223 N. Lincoln Street",
-      "city": "Wilmington",
-      "state": "DE",
-      "zip": null,
-      "addressTBD": false,
-      "market": "Wilmington, DE",
-      "type": "Office",
-      "totalSF": 3000,
-      "description": "Professional office space at 223 N. Lincoln Street in Wilmington, Delaware. Owned and managed in-house by Old Town Hall Associates.",
-      "features": [],
-      "images": [],
-      "availability": {
-        "status": "leased",
-        "headline": "",
-        "broker": null,
-        "loopnet": "",
-        "brochure": ""
-      },
-      "geo": { "lat": null, "lng": null }
-    },
-    {
       "name": "Milford Lakeview",
       "slug": "milford-lakeview",
       "address": "903 Lakeview Avenue",
