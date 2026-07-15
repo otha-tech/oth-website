@@ -2,13 +2,6 @@
   "_comment": "Curated marketing availability that intentionally differs from the computed feed (oth-dashboard buildings_public.json). Every override MUST carry source, as_of, reason. The sync script FAILS if |published_sf - computed_sf| exceeds driftThresholdSf \u2014 re-confirm and re-date the override instead of letting it go stale. suppress:true publishes the building as leased regardless of computed vacancy (not currently marketed). Never add financial fields here.",
   "driftThresholdSf": 1500,
   "overrides": {
-    "100-commerce-drive": {
-      "published_sf": 7864,
-      "headline": "7,864 SF available",
-      "source": "CBRE listing (John Kaczowka)",
-      "as_of": "2026-07-15",
-      "reason": "Broker listing figure; computed occupancy differs by ~820 SF - reconcile suite detail with CBRE"
-    },
     "seaford": {
       "published_sf": 3000,
       "headline": "3,000 SF available",
@@ -17,10 +10,11 @@
       "reason": "Unit-based figure (one 3,000 SF suite)"
     },
     "milford-lakeview": {
-      "suppress": true,
-      "source": "curated",
+      "published_sf": 2400,
+      "headline": "2,400 SF available",
+      "source": "R&R (Charlie Rodriguez)",
       "as_of": "2026-07-15",
-      "reason": "2,400 SF vacant (former school board space) - not currently marketed; listing decision pending"
+      "reason": "Former school board space; exact suite SF (auto-rounding would overstate)"
     }
   }
 }

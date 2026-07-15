@@ -28,7 +28,7 @@
       ],
       "availability": {
         "status": "available",
-        "headline": "7,864 SF available",
+        "headline": "About 7,000 SF available",
         "broker": {
           "name": "John Kaczowka",
           "firm": "CBRE"
@@ -36,9 +36,9 @@
         "loopnet": "https://www.loopnet.com/Listing/100-Commerce-Dr-Newark-DE/3953005/",
         "brochure": "assets/100 commerce.pdf",
         "computed_sf": 7044,
-        "published_sf": 7864,
+        "published_sf": 7044,
         "as_of": "2026-07-15",
-        "source": "override: CBRE listing (John Kaczowka)"
+        "source": "computed"
       },
       "featured": {
         "order": 2,
@@ -338,15 +338,18 @@
       "features": [],
       "images": [],
       "availability": {
-        "status": "leased",
-        "headline": "",
-        "broker": null,
+        "status": "available",
+        "headline": "2,400 SF available",
+        "broker": {
+          "name": "Charlie Rodriguez",
+          "firm": "R&R"
+        },
         "loopnet": "",
         "brochure": "",
         "computed_sf": 2400,
-        "published_sf": 0,
+        "published_sf": 2400,
         "as_of": "2026-07-15",
-        "source": "override: curated"
+        "source": "override: R&R (Charlie Rodriguez)"
       },
       "geo": {
         "lat": null,
