@@ -304,3 +304,10 @@ footer { padding: 2rem 4rem; background: var(--gray-100); border-top: 1px solid 
     .features-list { grid-template-columns: 1fr; }
     .spec-row { gap: 2rem; }
 }
+
+/* Availability freshness stamp (generated pages) */
+.avail-asof {
+    font-size: 0.8rem;
+    color: var(--gray-400);
+    margin: -4px 0 10px;
+}

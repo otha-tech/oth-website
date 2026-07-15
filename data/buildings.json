@@ -13,16 +13,43 @@
       "type": "Class A Office",
       "totalSF": 60205,
       "description": "Class A three-story office building at Christiana Corporate Center in Newark, Delaware. Glass rooftop mezzanine, 9-foot ceilings, and roughly 300 parking spaces, with direct visibility from I-95. Owned and managed in-house by Old Town Hall Associates.",
-      "features": ["Class A three-story office", "Glass rooftop mezzanine", "9' ceilings", "~300 parking spaces", "Visible from I-95", "Christiana Corporate Center"],
-      "images": ["assets/commerce1.jpg", "assets/commerce_fountain.jpg", "assets/commerce_bench.jpg"],
+      "features": [
+        "Class A three-story office",
+        "Glass rooftop mezzanine",
+        "9' ceilings",
+        "~300 parking spaces",
+        "Visible from I-95",
+        "Christiana Corporate Center"
+      ],
+      "images": [
+        "assets/commerce1.jpg",
+        "assets/commerce_fountain.jpg",
+        "assets/commerce_bench.jpg"
+      ],
       "availability": {
         "status": "available",
         "headline": "7,864 SF available",
-        "broker": { "name": "John Kaczowka", "firm": "CBRE" },
+        "broker": {
+          "name": "John Kaczowka",
+          "firm": "CBRE"
+        },
         "loopnet": "https://www.loopnet.com/Listing/100-Commerce-Dr-Newark-DE/3953005/",
-        "brochure": "assets/100 commerce.pdf"
+        "brochure": "assets/100 commerce.pdf",
+        "computed_sf": 7044,
+        "published_sf": 7864,
+        "as_of": "2026-07-15",
+        "source": "override: CBRE listing (John Kaczowka)"
       },
-      "geo": { "lat": null, "lng": null }
+      "featured": {
+        "order": 2,
+        "image": "assets/commerce1.jpg",
+        "blurbLead": "Class A 3-story office at Christiana Corporate Center.",
+        "blurbTail": "Glass rooftop mezzanine, 9' ceilings, 300 parking spaces. Visible from I-95."
+      },
+      "geo": {
+        "lat": null,
+        "lng": null
+      }
     },
     {
       "name": "92 Reads Way",
@@ -36,16 +63,40 @@
       "type": "Office",
       "totalSF": 45000,
       "description": "Office space in a campus setting with a refreshed atrium and common areas, in New Castle, Delaware. Free parking, natural light, and easy access adjacent to Wilmington Airport. Owned and managed in-house by Old Town Hall Associates.",
-      "features": ["Campus setting", "Refreshed atrium and common areas", "Free parking", "Natural light", "Adjacent to Wilmington Airport"],
-      "images": ["assets/reads.jpg"],
+      "features": [
+        "Campus setting",
+        "Refreshed atrium and common areas",
+        "Free parking",
+        "Natural light",
+        "Adjacent to Wilmington Airport"
+      ],
+      "images": [
+        "assets/reads.jpg"
+      ],
       "availability": {
         "status": "available",
         "headline": "About 15,000 SF available",
-        "broker": { "name": "Cindy Fleming", "firm": "JLL" },
+        "broker": {
+          "name": "Cindy Fleming",
+          "firm": "JLL"
+        },
         "loopnet": "https://www.loopnet.com/Listing/92-Reads-Way-New-Castle-DE/34569280/",
-        "brochure": "assets/92 reads way.pdf"
+        "brochure": "assets/92 reads way.pdf",
+        "computed_sf": 15030,
+        "published_sf": 15030,
+        "as_of": "2026-07-15",
+        "source": "computed"
       },
-      "geo": { "lat": null, "lng": null }
+      "featured": {
+        "order": 1,
+        "image": "assets/reads.jpg",
+        "blurbLead": "Office space in a campus setting with refreshed atrium and common areas.",
+        "blurbTail": "Free parking, natural light, adjacent to Wilmington Airport."
+      },
+      "geo": {
+        "lat": null,
+        "lng": null
+      }
     },
     {
       "name": "Sabre Building",
@@ -59,16 +110,38 @@
       "type": "Office",
       "totalSF": 65223,
       "description": "Professional office building at 4051 Ogletown-Stanton Road in Newark, Delaware. Convenient location with excellent visibility and easy highway access. Owned and managed in-house by Old Town Hall Associates.",
-      "features": ["Professional office", "Excellent visibility", "Easy highway access"],
-      "images": ["assets/sabre.jpg"],
+      "features": [
+        "Professional office",
+        "Excellent visibility",
+        "Easy highway access"
+      ],
+      "images": [
+        "assets/sabre.jpg"
+      ],
       "availability": {
         "status": "leased",
         "headline": "",
-        "broker": { "name": "Cindy Fleming", "firm": "JLL" },
+        "broker": {
+          "name": "Cindy Fleming",
+          "firm": "JLL"
+        },
         "loopnet": "https://www.loopnet.com/Listing/4051-Ogletown-Stanton-Rd-Newark-DE/34775635/",
-        "brochure": ""
+        "brochure": "",
+        "computed_sf": 0,
+        "published_sf": 0,
+        "as_of": "2026-07-15",
+        "source": "computed"
       },
-      "geo": { "lat": null, "lng": null }
+      "featured": {
+        "order": 3,
+        "image": "assets/sabre.jpg",
+        "blurbLead": "Professional office building at 4051 Ogletown-Stanton Road.",
+        "blurbTail": "Convenient Newark location with excellent visibility and easy highway access."
+      },
+      "geo": {
+        "lat": null,
+        "lng": null
+      }
     },
     {
       "name": "113 Neurology Way",
@@ -89,9 +162,16 @@
         "headline": "",
         "broker": null,
         "loopnet": "",
-        "brochure": ""
+        "brochure": "",
+        "computed_sf": 0,
+        "published_sf": 0,
+        "as_of": "2026-07-15",
+        "source": "computed"
       },
-      "geo": { "lat": null, "lng": null }
+      "geo": {
+        "lat": null,
+        "lng": null
+      }
     },
     {
       "name": "Liz Plaza",
@@ -112,9 +192,16 @@
         "headline": "",
         "broker": null,
         "loopnet": "",
-        "brochure": ""
+        "brochure": "",
+        "computed_sf": 0,
+        "published_sf": 0,
+        "as_of": "2026-07-15",
+        "source": "computed"
       },
-      "geo": { "lat": null, "lng": null }
+      "geo": {
+        "lat": null,
+        "lng": null
+      }
     },
     {
       "name": "Kendall Building",
@@ -135,9 +222,16 @@
         "headline": "",
         "broker": null,
         "loopnet": "",
-        "brochure": ""
+        "brochure": "",
+        "computed_sf": 0,
+        "published_sf": 0,
+        "as_of": "2026-07-15",
+        "source": "computed"
       },
-      "geo": { "lat": null, "lng": null }
+      "geo": {
+        "lat": null,
+        "lng": null
+      }
     },
     {
       "name": "Beiser Building",
@@ -158,9 +252,16 @@
         "headline": "",
         "broker": null,
         "loopnet": "",
-        "brochure": ""
+        "brochure": "",
+        "computed_sf": 0,
+        "published_sf": 0,
+        "as_of": "2026-07-15",
+        "source": "computed"
       },
-      "geo": { "lat": null, "lng": null }
+      "geo": {
+        "lat": null,
+        "lng": null
+      }
     },
     {
       "name": "Millsboro",
@@ -181,9 +282,16 @@
         "headline": "",
         "broker": null,
         "loopnet": "",
-        "brochure": ""
+        "brochure": "",
+        "computed_sf": 0,
+        "published_sf": 0,
+        "as_of": "2026-07-15",
+        "source": "computed"
       },
-      "geo": { "lat": null, "lng": null }
+      "geo": {
+        "lat": null,
+        "lng": null
+      }
     },
     {
       "name": "16 S. DuPont",
@@ -204,9 +312,16 @@
         "headline": "",
         "broker": null,
         "loopnet": "",
-        "brochure": ""
+        "brochure": "",
+        "computed_sf": 0,
+        "published_sf": 0,
+        "as_of": "2026-07-15",
+        "source": "computed"
       },
-      "geo": { "lat": null, "lng": null }
+      "geo": {
+        "lat": null,
+        "lng": null
+      }
     },
     {
       "name": "Milford Lakeview",
@@ -227,9 +342,16 @@
         "headline": "",
         "broker": null,
         "loopnet": "",
-        "brochure": ""
+        "brochure": "",
+        "computed_sf": 2400,
+        "published_sf": 0,
+        "as_of": "2026-07-15",
+        "source": "override: curated"
       },
-      "geo": { "lat": null, "lng": null }
+      "geo": {
+        "lat": null,
+        "lng": null
+      }
     },
     {
       "name": "Milford Walnut Street",
@@ -250,9 +372,16 @@
         "headline": "",
         "broker": null,
         "loopnet": "",
-        "brochure": ""
+        "brochure": "",
+        "computed_sf": 0,
+        "published_sf": 0,
+        "as_of": "2026-07-15",
+        "source": "computed"
       },
-      "geo": { "lat": null, "lng": null }
+      "geo": {
+        "lat": null,
+        "lng": null
+      }
     },
     {
       "name": "Seaford",
@@ -273,9 +402,16 @@
         "headline": "3,000 SF available",
         "broker": null,
         "loopnet": "",
-        "brochure": ""
+        "brochure": "",
+        "computed_sf": 3000,
+        "published_sf": 3000,
+        "as_of": "2026-07-15",
+        "source": "override: curated"
       },
-      "geo": { "lat": null, "lng": null }
+      "geo": {
+        "lat": null,
+        "lng": null
+      }
     },
     {
       "name": "Front Street",
@@ -296,9 +432,16 @@
         "headline": "",
         "broker": null,
         "loopnet": "",
-        "brochure": ""
+        "brochure": "",
+        "computed_sf": 0,
+        "published_sf": 0,
+        "as_of": "2026-07-15",
+        "source": "computed"
       },
-      "geo": { "lat": null, "lng": null }
+      "geo": {
+        "lat": null,
+        "lng": null
+      }
     }
   ]
 }
