@@ -3,13 +3,40 @@
 Old Town Hall Associates commercial real estate brochure site.
 
 ## Architecture
-- **Homepage** `index.html` — hand-written, embedded CSS/JS (no build step)
-- **Property pages** — data-driven. `data/buildings.json` is the single source of truth;
-  `node build.mjs` regenerates `properties/<slug>/index.html` (one per building), the
-  `properties/index.html` hub, and `sitemap.xml`. Generated output is committed; GitHub
+- **Homepage** `index.html` — hand-written, embedded CSS/JS, EXCEPT two generated blocks
+  that `node build.mjs` owns (do not hand-edit between the markers):
+  - `<!-- FEATURED:START/END -->` — the three featured property cards (badge + availability
+    sentence composed from each building's `featured.blurbLead/blurbTail` + `availability.headline`)
+  - `<!-- MAP:START/END -->` — `window.OTH_PINS` data for the "Where You'll Find Us"
+    Leaflet/OSM map (pins = name/slug/coords/status/headline only; teal = available)
+- **Property pages** — data-driven. `data/buildings.json` is the site's source;
+  `node build.mjs` regenerates `properties/<slug>/index.html`, the `properties/index.html`
+  hub, `sitemap.xml`, and the homepage blocks. Generated output is committed; GitHub
   Pages serves it statically (no host build).
 - Generated pages share `assets/oth.css`; the homepage keeps its own inline styles.
 - Hosted on **GitHub Pages** with custom domain `othde.com` (CNAME file)
+
+## Availability = generated from the OTHA data stack (since 2026-07-15)
+Do NOT hand-edit availability numbers anywhere. The pipeline
+(plan: `oth-dashboard/docs/WEBSITE_DATA_INTEGRATION_PLAN.md`):
+
+1. `oth-dashboard/buildings_public.json` — computed feed (Mini refresh, hourly weekdays);
+   the MacBook copy goes stale, always `scp` fresh from the Mini first.
+2. `scripts/sync_availability.mjs` merges the feed with `data/availability_overrides.json`
+   (curated broker figures; each override carries source + as_of + reason; drift >1,500 SF
+   from computed FAILS — re-confirm with the broker, never bump the threshold;
+   `suppress:true` = vacant but not marketed) into `data/buildings.json`
+   (`status`, `headline`, `computed_sf`, `published_sf`, `as_of`, `source`).
+3. `node build.mjs` renders pages + homepage blocks (+ "Availability as of <Month Year>"
+   stamp on available pages). Tests: `node --test scripts/test_availability.mjs`.
+4. **Publish only via the `/oth-web-sync` skill** — diff shown to Ben, push on his yes,
+   live curl verify, then pull the Mini clone + the second MacBook clone
+   (`~/Projects/oth-website`). The Mini's dashboard refresh runs the sync in `--check`
+   mode as a drift sentinel (alerts, never publishes).
+
+`geo` on each building = lat/lng (CRE-BI parcel centroid or Nominatim; `source` says
+which) → JSON-LD GeoCoordinates + the homepage map. Never any financial field in
+`buildings.json`, `availability_overrides.json`, or the feed.
 
 ## Property pages (data-driven)
 - Edit `data/buildings.json`, then run `node build.mjs` from `site/`, then commit.
