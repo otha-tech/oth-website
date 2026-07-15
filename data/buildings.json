@@ -176,7 +176,7 @@
     {
       "name": "Liz Plaza",
       "slug": "liz-plaza",
-      "address": "1454–1456 Pulaski Highway",
+      "address": "1454\u20131456 Pulaski Highway",
       "city": "Newark",
       "state": "DE",
       "zip": null,
@@ -184,7 +184,7 @@
       "market": "Newark, DE",
       "type": "Office",
       "totalSF": 8443,
-      "description": "Professional office space at 1454–1456 Pulaski Highway in Newark, Delaware. Owned and managed in-house by Old Town Hall Associates.",
+      "description": "Professional office space at 1454\u20131456 Pulaski Highway in Newark, Delaware. Owned and managed in-house by Old Town Hall Associates.",
       "features": [],
       "images": [],
       "availability": {
@@ -342,7 +342,7 @@
         "headline": "2,400 SF available",
         "broker": {
           "name": "Charlie Rodriguez",
-          "firm": "R&R"
+          "firm": "R&R Commercial Realty"
         },
         "loopnet": "",
         "brochure": "",
