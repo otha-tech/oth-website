@@ -39,7 +39,9 @@ which) → JSON-LD GeoCoordinates + the homepage map. Never any financial field 
 `buildings.json`, `availability_overrides.json`, or the feed.
 
 ## Property pages (data-driven)
-- Edit `data/buildings.json`, then run `node build.mjs` from `site/`, then commit.
+- Edit `data/buildings.json`, then run `node build.mjs` from the repo root, then commit.
+  (build.mjs resolves all paths relative to its own location, so cwd doesn't matter — but
+  run it from the repo root for clarity. There is no `site/` subdirectory.)
 - Availability: each building has `availability.status` = `"available"` | `"leased"`.
   Available buildings show a leasing CTA (LoopNet/brochure/call); leased show "fully
   leased / contact us." The hub groups Available Now first, then Full Portfolio. The
@@ -62,8 +64,9 @@ which) → JSON-LD GeoCoordinates + the homepage map. Never any financial field 
 - **Parent archive:** `https://github.com/otha-tech/otha-website-assets-only.git` — PDFs, photos, docs (not deployed)
 
 ## Local Paths
-- MacBook: `/Users/benpasquale/Projects/OTH website/site/` (site repo)
-- Mac Mini: `~/Projects/oth-website-repo/`
+- MacBook: `/Users/benpasquale/Projects/oth-website/` (this site repo — flat, no `site/` subdir).
+  Note: `~/Projects/OTH website/` is the *separate* assets-only archive repo, not this one.
+- Mac Mini: `~/Projects/oth-website-repo/` (verify the exact clone name on the Mini before deploy)
 
 ## SEO
 - `sitemap.xml` submitted to Google Search Console (Mar 2026)
@@ -91,8 +94,11 @@ break SSL renewal. `gis-proxy.othde.com` may stay Proxied (separate tunnel) — 
 Changes pushed to `main` auto-deploy via GitHub Pages. Run `node build.mjs` first if you
 edited `buildings.json` or `build.mjs`, so generated pages + sitemap are current.
 
+Availability/number changes publish only via the `/oth-web-sync` skill (see above). The
+manual path below is for non-availability edits (design, copy, templates):
+
 ```bash
-cd "/Users/benpasquale/Projects/OTH website/site"
+cd /Users/benpasquale/Projects/oth-website
 node build.mjs   # if property data/templates changed
 git add . && git commit -m "message" && git push
 # Then sync Mini:
