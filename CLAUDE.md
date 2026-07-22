@@ -31,7 +31,7 @@ Do NOT hand-edit availability numbers anywhere. The pipeline
    stamp on available pages). Tests: `node --test scripts/test_availability.mjs`.
 4. **Publish only via the `/oth-web-sync` skill** — diff shown to Ben, push on his yes,
    live curl verify, then pull the Mini clone + the second MacBook clone
-   (`~/Projects/oth-website`). The Mini's dashboard refresh runs the sync in `--check`
+   (`~/Projects/otha/oth-website`). The Mini's dashboard refresh runs the sync in `--check`
    mode as a drift sentinel (alerts, never publishes).
 
 `geo` on each building = lat/lng (CRE-BI parcel centroid or Nominatim; `source` says
@@ -64,9 +64,9 @@ which) → JSON-LD GeoCoordinates + the homepage map. Never any financial field 
 - **Parent archive:** `https://github.com/otha-tech/otha-website-assets-only.git` — PDFs, photos, docs (not deployed)
 
 ## Local Paths
-- MacBook: `/Users/benpasquale/Projects/oth-website/` (this site repo — flat, no `site/` subdir).
+- MacBook: `/Users/benpasquale/Projects/otha/oth-website/` (this site repo — flat, no `site/` subdir).
   Note: `~/Projects/OTH website/` is the *separate* assets-only archive repo, not this one.
-- Mac Mini: `~/Projects/oth-website-repo/` (verify the exact clone name on the Mini before deploy)
+- Mac Mini: `~/Projects/otha/oth-website/` (verify the exact clone name on the Mini before deploy)
 
 ## SEO
 - `sitemap.xml` submitted to Google Search Console (Mar 2026)
@@ -98,11 +98,11 @@ Availability/number changes publish only via the `/oth-web-sync` skill (see abov
 manual path below is for non-availability edits (design, copy, templates):
 
 ```bash
-cd /Users/benpasquale/Projects/oth-website
+cd /Users/benpasquale/Projects/otha/oth-website
 node build.mjs   # if property data/templates changed
 git add . && git commit -m "message" && git push
 # Then sync Mini:
-ssh benjaminpasquale@100.83.77.70 "cd ~/Projects/oth-website-repo && git pull"
+ssh benjaminpasquale@100.83.77.70 "cd ~/Projects/otha/oth-website && git pull"
 ```
 
 ## Design
