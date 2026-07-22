@@ -20,9 +20,8 @@ const args = process.argv.slice(2);
 const checkOnly = args.includes('--check');
 const feedArg = args.includes('--feed') ? args[args.indexOf('--feed') + 1] : null;
 
-// MacBook layout, then Mini layout (site clone = ~/Projects/otha/oth-website).
+// Both machines use the otha/ umbrella layout: sibling repo oth-dashboard.
 const FEED_CANDIDATES = [
-  join(SITE, '..', '..', 'oth-dashboard', 'buildings_public.json'),
   join(SITE, '..', 'oth-dashboard', 'buildings_public.json'),
 ];
 const feedPath = feedArg || FEED_CANDIDATES.find((p) => existsSync(p));
