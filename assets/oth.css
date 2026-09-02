@@ -287,6 +287,9 @@ nav {
 footer { padding: 2rem 4rem; background: var(--gray-100); border-top: 1px solid var(--gray-200); }
 .footer-content { max-width: 1400px; margin: 0 auto; text-align: center; }
 .footer-text { font-size: 0.8rem; color: var(--gray-400); }
+.footer-sister { margin-top: 0.5rem; }
+.footer-link { color: var(--gray-400); text-decoration: underline; text-underline-offset: 2px; }
+.footer-link:hover { color: var(--teal, #0f766e); }
 
 /* Responsive */
 @media (max-width: 1024px) {
