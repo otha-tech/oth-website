@@ -25,7 +25,8 @@ Do NOT hand-edit availability numbers anywhere. The pipeline
 2. `scripts/sync_availability.mjs` merges the feed with `data/availability_overrides.json`
    (curated broker figures; each override carries source + as_of + reason; drift >1,500 SF
    from computed FAILS — re-confirm with the broker, never bump the threshold;
-   `suppress:true` = vacant but not marketed) into `data/buildings.json`
+   `suppress:true` = vacant but not marketed; `pending_sf` = vacant space under lease
+   negotiation, netted out of the drift check — remove it once the lease is signed) into `data/buildings.json`
    (`status`, `headline`, `computed_sf`, `published_sf`, `as_of`, `source`).
 3. `node build.mjs` renders pages + homepage blocks (+ "Availability as of <Month Year>"
    stamp on available pages). Tests: `node --test scripts/test_availability.mjs`.
