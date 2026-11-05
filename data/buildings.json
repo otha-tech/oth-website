@@ -12,7 +12,7 @@
       "market": "Newark, DE",
       "type": "Class A Office",
       "totalSF": 60205,
-      "description": "Class A three-story office building at Christiana Corporate Center in Newark, Delaware. Glass rooftop mezzanine, 9-foot ceilings, and roughly 300 parking spaces, with direct visibility from I-95. Owned and managed in-house by Old Town Hall Associates.",
+      "description": "Class A three-story office building at Christiana Corporate Center in Newark, Delaware. Glass rooftop mezzanine, 9-foot ceilings, and roughly 300 parking spaces, with direct visibility from I-95. Suites from about 1,000 to 5,000 SF, with move-in-ready space and turnkey buildouts available. Owned and managed in-house by Old Town Hall Associates.",
       "features": [
         "Class A three-story office",
         "Glass rooftop mezzanine",
@@ -28,17 +28,14 @@
       ],
       "availability": {
         "status": "available",
-        "headline": "About 7,000 SF available",
-        "broker": {
-          "name": "John Kaczowka",
-          "firm": "CBRE"
-        },
+        "headline": "About 8,000 SF available",
+        "broker": null,
         "loopnet": "https://www.loopnet.com/Listing/100-Commerce-Dr-Newark-DE/3953005/",
-        "brochure": "assets/100 commerce.pdf",
-        "computed_sf": 7044,
-        "published_sf": 7044,
-        "as_of": "2026-07-15",
-        "source": "computed"
+        "brochure": "",
+        "computed_sf": 8600,
+        "published_sf": 8000,
+        "as_of": "2026-11-05",
+        "source": "override: Ben Pasquale (owner)"
       },
       "featured": {
         "order": 2,
@@ -63,7 +60,7 @@
       "market": "New Castle, DE",
       "type": "Office",
       "totalSF": 45000,
-      "description": "Office space in a campus setting with a refreshed atrium and common areas, in New Castle, Delaware. Free parking, natural light, and easy access adjacent to Wilmington Airport. Owned and managed in-house by Old Town Hall Associates.",
+      "description": "Office space in a campus setting with a refreshed atrium and common areas, in New Castle, Delaware. Free parking, natural light, and easy access adjacent to Wilmington Airport. Suites from about 1,000 to 5,000 SF, with move-in-ready space and turnkey buildouts available. Owned and managed in-house by Old Town Hall Associates.",
       "features": [
         "Campus setting",
         "Refreshed atrium and common areas",
@@ -76,17 +73,14 @@
       ],
       "availability": {
         "status": "available",
-        "headline": "About 15,000 SF available",
-        "broker": {
-          "name": "Cindy Fleming",
-          "firm": "JLL"
-        },
+        "headline": "About 11,000 SF available",
+        "broker": null,
         "loopnet": "https://www.loopnet.com/Listing/92-Reads-Way-New-Castle-DE/34569280/",
-        "brochure": "assets/92 reads way.pdf",
-        "computed_sf": 15030,
-        "published_sf": 15030,
-        "as_of": "2026-07-15",
-        "source": "computed"
+        "brochure": "",
+        "computed_sf": 15017,
+        "published_sf": 11000,
+        "as_of": "2026-11-05",
+        "source": "override: Ben Pasquale (owner)"
       },
       "featured": {
         "order": 1,
@@ -131,7 +125,7 @@
         "brochure": "",
         "computed_sf": 0,
         "published_sf": 0,
-        "as_of": "2026-07-15",
+        "as_of": "2026-11-05",
         "source": "computed"
       },
       "featured": {
@@ -168,7 +162,7 @@
         "brochure": "",
         "computed_sf": 0,
         "published_sf": 0,
-        "as_of": "2026-07-15",
+        "as_of": "2026-11-05",
         "source": "computed"
       },
       "geo": {
@@ -180,7 +174,7 @@
     {
       "name": "Liz Plaza",
       "slug": "liz-plaza",
-      "address": "1454\u20131456 Pulaski Highway",
+      "address": "1454–1456 Pulaski Highway",
       "city": "Newark",
       "state": "DE",
       "zip": null,
@@ -188,7 +182,7 @@
       "market": "Newark, DE",
       "type": "Office",
       "totalSF": 8443,
-      "description": "Professional office space at 1454\u20131456 Pulaski Highway in Newark, Delaware. Owned and managed in-house by Old Town Hall Associates.",
+      "description": "Professional office space at 1454–1456 Pulaski Highway in Newark, Delaware. Owned and managed in-house by Old Town Hall Associates.",
       "features": [],
       "images": [],
       "availability": {
@@ -199,7 +193,7 @@
         "brochure": "",
         "computed_sf": 0,
         "published_sf": 0,
-        "as_of": "2026-07-15",
+        "as_of": "2026-11-05",
         "source": "computed"
       },
       "geo": {
@@ -261,7 +255,7 @@
         "brochure": "",
         "computed_sf": 0,
         "published_sf": 0,
-        "as_of": "2026-07-15",
+        "as_of": "2026-11-05",
         "source": "computed"
       },
       "geo": {
@@ -292,7 +286,7 @@
         "brochure": "",
         "computed_sf": 0,
         "published_sf": 0,
-        "as_of": "2026-07-15",
+        "as_of": "2026-11-05",
         "source": "computed"
       },
       "geo": {
@@ -323,7 +317,7 @@
         "brochure": "",
         "computed_sf": 0,
         "published_sf": 0,
-        "as_of": "2026-07-15",
+        "as_of": "2026-11-05",
         "source": "computed"
       },
       "geo": {
@@ -357,8 +351,8 @@
         "brochure": "",
         "computed_sf": 2400,
         "published_sf": 2400,
-        "as_of": "2026-07-15",
-        "source": "override: R&R (Charlie Rodriguez)"
+        "as_of": "2026-11-05",
+        "source": "override: R&R Commercial Realty (Charlie Rodriguez)"
       },
       "geo": {
         "lat": 38.902785,
@@ -388,7 +382,7 @@
         "brochure": "",
         "computed_sf": 0,
         "published_sf": 0,
-        "as_of": "2026-07-15",
+        "as_of": "2026-11-05",
         "source": "computed"
       },
       "geo": {
@@ -419,7 +413,7 @@
         "brochure": "",
         "computed_sf": 3000,
         "published_sf": 3000,
-        "as_of": "2026-07-15",
+        "as_of": "2026-11-05",
         "source": "override: curated"
       },
       "geo": {
@@ -450,7 +444,7 @@
         "brochure": "",
         "computed_sf": 0,
         "published_sf": 0,
-        "as_of": "2026-07-15",
+        "as_of": "2026-11-05",
         "source": "computed"
       },
       "geo": {

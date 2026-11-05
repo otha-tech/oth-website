@@ -41,6 +41,16 @@ test('stale override beyond threshold errors', () => {
   assert.match(r.errors[0], /drifts/);
 });
 
+test('pending_sf nets out space under negotiation, and errors once the lease lands', () => {
+  const o = { published_sf: 11000, pending_sf: 4000, headline: 'About 11,000 SF available', source: 'owner', as_of: '2026-11-05' };
+  const before = resolveAvailability({ slug: 'x', feedRow: { available_sf: 15017 }, override: o, asOf: '2026-11-05', driftThresholdSf: 1500 });
+  assert.equal(before.errors.length, 0);
+  assert.equal(before.published_sf, 11000);
+  const signed = resolveAvailability({ slug: 'x', feedRow: { available_sf: 11017 }, override: o, asOf: '2026-12-01', driftThresholdSf: 1500 });
+  assert.equal(signed.errors.length, 1);
+  assert.match(signed.errors[0], /pending/);
+});
+
 test('suppress publishes leased and warns when vacancy exists', () => {
   const r = resolveAvailability({
     slug: 'x', feedRow: { available_sf: 2400 },

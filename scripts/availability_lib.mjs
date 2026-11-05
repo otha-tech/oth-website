@@ -58,11 +58,17 @@ export function resolveAvailability({ slug, feedRow, override, asOf, driftThresh
   }
 
   if (override && typeof override.published_sf === 'number') {
-    const drift = Math.abs(override.published_sf - computed);
+    // pending_sf = space still vacant in the feed but under lease negotiation, so not marketed.
+    // Drift is measured net of it; once the lease is signed the feed drops and this errors,
+    // which is the prompt to remove pending_sf.
+    const pending = typeof override.pending_sf === 'number' ? override.pending_sf : 0;
+    const basis = computed - pending;
+    const drift = Math.abs(override.published_sf - basis);
     if (drift > driftThresholdSf) {
       errors.push(
         `${slug}: override ${override.published_sf.toLocaleString('en-US')} SF drifts ` +
-        `${drift.toLocaleString('en-US')} SF from computed ${computed.toLocaleString('en-US')} SF ` +
+        `${drift.toLocaleString('en-US')} SF from computed ${computed.toLocaleString('en-US')} SF` +
+        `${pending ? ` less ${pending.toLocaleString('en-US')} SF pending` : ''} ` +
         `(threshold ${driftThresholdSf}) — re-confirm the override (as_of ${override.as_of})`
       );
     }

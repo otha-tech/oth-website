@@ -1,5 +1,5 @@
 {
-  "_comment": "Curated marketing availability that intentionally differs from the computed feed (oth-dashboard buildings_public.json). Every override MUST carry source, as_of, reason. The sync script FAILS if |published_sf - computed_sf| exceeds driftThresholdSf \u2014 re-confirm and re-date the override instead of letting it go stale. suppress:true publishes the building as leased regardless of computed vacancy (not currently marketed). Never add financial fields here.",
+  "_comment": "Curated marketing availability that intentionally differs from the computed feed (oth-dashboard buildings_public.json). Every override MUST carry source, as_of, reason. The sync script FAILS if |published_sf - computed_sf| exceeds driftThresholdSf — re-confirm and re-date the override instead of letting it go stale. suppress:true publishes the building as leased regardless of computed vacancy (not currently marketed). Never add financial fields here.",
   "driftThresholdSf": 1500,
   "overrides": {
     "seaford": {
@@ -15,6 +15,21 @@
       "source": "R&R Commercial Realty (Charlie Rodriguez)",
       "as_of": "2026-07-15",
       "reason": "Former school board space; exact suite SF (auto-rounding would overstate)"
+    },
+    "92-reads-way": {
+      "published_sf": 11000,
+      "pending_sf": 4000,
+      "headline": "About 11,000 SF available",
+      "source": "Ben Pasquale (owner)",
+      "as_of": "2026-11-05",
+      "reason": "About 4,000 SF is under lease negotiation and no longer marketed; remove pending_sf once the lease is signed (the drift check will flag it)"
+    },
+    "100-commerce-drive": {
+      "published_sf": 8000,
+      "headline": "About 8,000 SF available",
+      "source": "Ben Pasquale (owner)",
+      "as_of": "2026-11-05",
+      "reason": "Marketing figure matching the updated brochure"
     }
   }
 }
