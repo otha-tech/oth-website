@@ -34,7 +34,7 @@
         "brochure": "",
         "computed_sf": 8600,
         "published_sf": 8000,
-        "as_of": "2026-11-05",
+        "as_of": "2026-11-10",
         "source": "override: Ben Pasquale (owner)"
       },
       "featured": {
@@ -79,7 +79,7 @@
         "brochure": "",
         "computed_sf": 15017,
         "published_sf": 11000,
-        "as_of": "2026-11-05",
+        "as_of": "2026-11-10",
         "source": "override: Ben Pasquale (owner)"
       },
       "featured": {
@@ -125,7 +125,7 @@
         "brochure": "",
         "computed_sf": 0,
         "published_sf": 0,
-        "as_of": "2026-11-05",
+        "as_of": "2026-11-10",
         "source": "computed"
       },
       "featured": {
@@ -162,7 +162,7 @@
         "brochure": "",
         "computed_sf": 0,
         "published_sf": 0,
-        "as_of": "2026-11-05",
+        "as_of": "2026-11-10",
         "source": "computed"
       },
       "geo": {
@@ -193,7 +193,7 @@
         "brochure": "",
         "computed_sf": 0,
         "published_sf": 0,
-        "as_of": "2026-11-05",
+        "as_of": "2026-11-10",
         "source": "computed"
       },
       "geo": {
@@ -224,7 +224,7 @@
         "brochure": "",
         "computed_sf": 0,
         "published_sf": 0,
-        "as_of": "2026-07-15",
+        "as_of": "2026-11-10",
         "source": "computed"
       },
       "geo": {
@@ -255,7 +255,7 @@
         "brochure": "",
         "computed_sf": 0,
         "published_sf": 0,
-        "as_of": "2026-11-05",
+        "as_of": "2026-11-10",
         "source": "computed"
       },
       "geo": {
@@ -286,7 +286,7 @@
         "brochure": "",
         "computed_sf": 0,
         "published_sf": 0,
-        "as_of": "2026-11-05",
+        "as_of": "2026-11-10",
         "source": "computed"
       },
       "geo": {
@@ -317,7 +317,7 @@
         "brochure": "",
         "computed_sf": 0,
         "published_sf": 0,
-        "as_of": "2026-11-05",
+        "as_of": "2026-11-10",
         "source": "computed"
       },
       "geo": {
@@ -341,8 +341,8 @@
       "features": [],
       "images": [],
       "availability": {
-        "status": "available",
-        "headline": "2,400 SF available",
+        "status": "leased",
+        "headline": "",
         "broker": {
           "name": "Charlie Rodriguez",
           "firm": "R&R Commercial Realty"
@@ -350,9 +350,9 @@
         "loopnet": "",
         "brochure": "",
         "computed_sf": 2400,
-        "published_sf": 2400,
-        "as_of": "2026-11-05",
-        "source": "override: R&R Commercial Realty (Charlie Rodriguez)"
+        "published_sf": 0,
+        "as_of": "2026-11-10",
+        "source": "override: Ben Pasquale (owner); Marty/Wohlsen emails 10/28-10/29/2026"
       },
       "geo": {
         "lat": 38.902785,
@@ -382,7 +382,7 @@
         "brochure": "",
         "computed_sf": 0,
         "published_sf": 0,
-        "as_of": "2026-11-05",
+        "as_of": "2026-11-10",
         "source": "computed"
       },
       "geo": {
@@ -413,7 +413,7 @@
         "brochure": "",
         "computed_sf": 3000,
         "published_sf": 3000,
-        "as_of": "2026-11-05",
+        "as_of": "2026-11-10",
         "source": "override: curated"
       },
       "geo": {
@@ -444,7 +444,7 @@
         "brochure": "",
         "computed_sf": 0,
         "published_sf": 0,
-        "as_of": "2026-11-05",
+        "as_of": "2026-11-10",
         "source": "computed"
       },
       "geo": {
