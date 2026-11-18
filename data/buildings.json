@@ -375,13 +375,13 @@
       "features": [],
       "images": [],
       "availability": {
-        "status": "leased",
-        "headline": "",
+        "status": "available",
+        "headline": "1,500 SF available",
         "broker": null,
         "loopnet": "",
         "brochure": "",
-        "computed_sf": 0,
-        "published_sf": 0,
+        "computed_sf": 1500,
+        "published_sf": 1500,
         "as_of": "2026-11-18",
         "source": "computed"
       },
